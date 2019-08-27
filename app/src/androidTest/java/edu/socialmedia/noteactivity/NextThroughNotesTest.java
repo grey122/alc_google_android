@@ -1,26 +1,23 @@
 package edu.socialmedia.noteactivity;
 
-import android.app.Activity;
-import android.support.test.espresso.contrib.DrawerActions;
-import android.support.test.espresso.contrib.NavigationViewActions;
-import android.support.test.espresso.contrib.RecyclerViewActions;
-import android.support.test.rule.ActivityTestRule;
+import androidx.test.espresso.contrib.DrawerActions;
+import androidx.test.espresso.contrib.NavigationViewActions;
+import androidx.test.espresso.contrib.RecyclerViewActions;
+import androidx.test.rule.ActivityTestRule;
 
 import org.junit.Rule;
-import org.junit.Test;
-import android.support.test.rule.ActivityTestRule;
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.action.ViewActions.*;
-import static android.support.test.espresso.matcher.ViewMatchers.*;
-import static android.support.test.espresso.assertion.ViewAssertions.*;
-import static org.hamcrest.Matchers.*;
+
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.*;
+import static androidx.test.espresso.matcher.ViewMatchers.*;
+import static androidx.test.espresso.assertion.ViewAssertions.*;
+
 import java.util.List;
-import static org.junit.Assert.*;
 
 public class NextThroughNotesTest {
     @Rule
-    public ActivityTestRule<Main2Activity> mActivityTestRule =
-            new ActivityTestRule(Main2Activity.class);
+    public ActivityTestRule<MainActivity> mActivityTestRule =
+            new ActivityTestRule(MainActivity.class);
 
     public void  NextThroughNotes(){
 

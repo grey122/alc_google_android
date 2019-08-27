@@ -28,7 +28,6 @@ public final class CourseInfo implements Parcelable {
         source.readTypedList(mModules, ModuleInfo.CREATOR);
     }
 
-
     public String getCourseId() {
         return mCourseId;
     }
@@ -83,7 +82,6 @@ public final class CourseInfo implements Parcelable {
     public int hashCode() {
         return mCourseId.hashCode();
     }
-
     @Override
     public int describeContents() {
         return 0;
@@ -91,11 +89,9 @@ public final class CourseInfo implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-
         dest.writeString(mCourseId);
         dest.writeString(mTitle);
         dest.writeTypedList(mModules);
-
     }
 
     public static final Parcelable.Creator<CourseInfo> CREATOR =
@@ -111,4 +107,5 @@ public final class CourseInfo implements Parcelable {
                     return new CourseInfo[size];
                 }
             };
+
 }
